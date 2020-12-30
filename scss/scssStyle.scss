@@ -1,0 +1,149 @@
+$base-font-size: 16px;
+$base-background-color : rgb(187, 184, 211);
+$base-margin : .5em;
+$base-padding : .50rem;
+$myAnimal : gato;
+$colorTest : blue
+
+body, html {
+    margin: 0;
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    place-content: space-around;
+    font-size : $base-font-size;
+    background-color: $base-background-color;
+    font-family: 'Nunito', sans-serif;
+}
+
+.tarjeta {
+    padding: 0 .1em;
+    border: solid 1px black;
+    width: 300px;
+    margin-top: 8rem;
+    
+
+    &__img {
+        display: block;
+        height: 100px;
+        width: 100%;
+        background-image: url(https://www.vhv.rs/dpng/d/402-4027176_chicken-dog-food-dog-food-bowl-transparent-hd.png);
+        background-position: 50% 30%;
+    }
+
+    &__contenido {
+        padding: 1.5em;
+        background: white;
+    }
+
+    &__lista {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        padding: $base-padding;
+        background: rgb(144, 66, 175);
+        border-radius: 50%;
+        font-size: .85em;
+        margin: $base-margin;
+
+        &--active {
+            background: #5dbd25;
+            font-weight: bolder;
+        }
+    }
+
+    &__boton {
+        background: lightcoral;
+        color: #ffffff;
+        text-decoration: none;
+        padding: .5em auto;
+        border-radius: .5em;
+        display: inline-block;
+        margin-top: $base-margin;
+        align-self: center;
+    }
+}
+
+
+.container {
+    h3 {        
+        font-weight: bolder;
+        font-size: 45px;
+    }
+    @if $myAnimal == gato {
+        background-image: url('../img/cat1.jfif');
+        background-position: center;
+        border: solid 2px black;
+        text-align: center;
+        
+    } @else if $myAnimal == perro {
+        background-image: url('../img/dog1.jpg');
+        background-position: center;
+        border: solid 2px black;
+        text-align: center;
+        
+    } @else {
+        background-color: black;
+        background-position: center;
+        border: solid 2px black;
+        text-align: center; 
+    }
+}
+
+
+@for $i from 1 through 4 {
+    .container#{$i} {
+        font-size: 1em * $i;
+    }
+}
+
+$colors:  (
+    color1: blue,
+    color2: red,
+    color3: yellow,
+    color4: green,
+);
+
+@each $color, $actualColor in $colors {
+    .#{$color} {
+        color: $actualColor;
+    }
+}
+
+.containerE {
+    font-size: 30px;
+}
+
+.containerEx {
+    @extend.containerE;
+    font-weight: bolder;
+}
+
+@mixin tamanios ($width , $height, $font-size) { 
+    width: $width;
+    height: $height;
+    font-size: $font-size;
+}
+
+.containerM {
+    @include tamanios (300px, 200px, 20px);
+    border: solid 2px black
+}
+
+.containerMi {
+    @include tamanios (500px, 300px, 40px);
+    border: solid 2px black;
+}
+
+.containerg {
+    background-color: $colorTest;
+}
+

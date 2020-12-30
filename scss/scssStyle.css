@@ -1,0 +1,140 @@
+body, html {
+  margin: 0;
+  height: 100vh;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[4];
+      grid-template-columns: repeat(4, 2fr);
+  place-content: space-around;
+  font-size: 16px;
+  background-color: #bbb8d3;
+  font-family: 'Nunito', sans-serif;
+}
+
+.tarjeta {
+  padding: 0 .1em;
+  border: solid 1px black;
+  width: 300px;
+  margin-top: 8rem;
+}
+
+.tarjeta__img {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background-image: url(https://www.vhv.rs/dpng/d/402-4027176_chicken-dog-food-dog-food-bowl-transparent-hd.png);
+  background-position: 50% 30%;
+}
+
+.tarjeta__contenido {
+  padding: 1.5em;
+  background: white;
+}
+
+.tarjeta__lista {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.tarjeta__item {
+  padding: 0.5rem;
+  background: #9042af;
+  border-radius: 50%;
+  font-size: .85em;
+  margin: 0.5em;
+}
+
+.tarjeta__item--active {
+  background: #5dbd25;
+  font-weight: bolder;
+}
+
+.tarjeta__boton {
+  background: lightcoral;
+  color: #ffffff;
+  text-decoration: none;
+  padding: .5em auto;
+  border-radius: .5em;
+  display: inline-block;
+  margin-top: 0.5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container {
+  background-image: url("../img/cat1.jfif");
+  background-position: center;
+  border: solid 2px black;
+  text-align: center;
+}
+
+.container h3 {
+  font-weight: bolder;
+  font-size: 45px;
+}
+
+.container1 {
+  font-size: 1em;
+}
+
+.container2 {
+  font-size: 2em;
+}
+
+.container3 {
+  font-size: 3em;
+}
+
+.container4 {
+  font-size: 4em;
+}
+
+.color1 {
+  color: blue;
+}
+
+.color2 {
+  color: red;
+}
+
+.color3 {
+  color: yellow;
+}
+
+.color4 {
+  color: green;
+}
+
+.containerE, .containerEx {
+  font-size: 30px;
+}
+
+.containerEx {
+  font-weight: bolder;
+}
+
+.containerM {
+  width: 300px;
+  height: 200px;
+  font-size: 20px;
+  border: solid 2px black;
+}
+
+.containerMi {
+  width: 500px;
+  height: 300px;
+  font-size: 40px;
+  border: solid 2px black;
+}
+/*# sourceMappingURL=scssStyle.css.map */

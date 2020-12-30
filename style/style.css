@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+.backgroundImage {
+	background-image: url("https://png.pngtree.com/png-clipart/20190705/original/pngtree-clip-art-animal-illustration-dog-vector-illustration-illustration-of-png-image_4347788.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: fixed;
+	opacity: 0.2;
+	z-index: -1;
+	background-size: cover;
+	width: 100vw;
+    height: 100vh;
+}
+
+
+
+.tituloCeleste {
+	color :#bfd93f ;
+	font-weight: bolder;
+	font-size: 4rem;
+}
+
+.parrafoGris {
+	color :#bababa ;
+	
+}
+
+tr {
+	color: red ;
+}
+
+.parrafoFuente {
+	color: #fff;
+	font-family: 'roboto' , 'goldman';
+	text-decoration: underline;
+}
+
+.parrafoFuente2 {
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.division1 {
+	width: 100vh;
+}
+.division1 ul {
+	width: 100vh;
+	background-color: rgb(209, 188, 70);
+	border: solid 5px black;
+	list-style: none;
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+
+}
+
+.division1 li {
+	color: cyan;
+	background-color: rgb(209, 188, 70);
+	border: solid 2px black;
+	display: inline-block; 
+	width: 25%;
+	position: relative;
+	font-size: 14px;
+	text-align: center;
+}
+
+.division1 ul ul {
+	position: absolute;
+	display: none;
+	padding: 0;
+	margin: 0;
+}
+
+.division1 ul ul li {
+	color: cyan;
+	display: block;
+	
+	
+}
+
+.division1 ul li:hover ul {
+	display: block;
+	z-index: 1;
+	
+}
+   
+   
+   
+.imagenPerro {
+	   background-image: url("https://png.pngtree.com/png-clipart/20191120/original/pngtree-christmas-dog-santa-claus-animal-vector-png-image_5071530.jpg");
+   }
+
+header { margin-bottom: 10px;
+
+}
+nav{ margin-bottom: 10px;
+
+}
+section { margin-bottom: 10px;
+
+}
+footer { 
+	margin-bottom:  10px; 
+}
+
+.division1 {
+	margin-left: 30vh;
+	align-content: center;
+	display: inline-block;
+}
+
+
+
+/*
+.contactanos {
+	position: absolute;
+	top: -10px;
+	right: 200px;
+	display: inline-block;
+	color: cyan;
+	
+	background-color: blue;
+}
+
+.contactoBlogI {
+	align-content: center;
+	padding: 5px;
+	position: absolute;
+	display: inline-block;
+	top: 10px;
+	right: 10px;
+	background-color: green;
+} */
+
+h1 {
+	font-size: 100px;
+}
+
+.productosD {
+background-image: linear-gradient(to bottom ,red , tomato);
+margin-top: 10px;
+border: solid 5px black;
+opacity: 0.8;
+}
+
+.noticias {
+background-color: tomato;
+margin-top: 10px;
+border: solid 5px black;
+opacity: 0.8;
+overflow: scroll;
+}
+
+.masInfo {
+	border: dotted 5px black;
+	text-align: center;
+	background-image: linear-gradient(to top ,red , tomato);
+	opacity: .8;
+}
+
+.h3Style {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: rgb(39, 64, 175)
+}
+
+.fotoPerros {
+	width: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: .8;
+}
+
+.fotoGatos {
+	width: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: .8;
+}
+
+.parrafoEnvios {
+	width: 700px;
+	margin: auto;
+}
+
+.parrafoDescuentos {
+	width: 700px;
+	margin: auto;
+}
+
+.headerContainer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	background-color: #37b1cc;
+}
+
+.navContainer {
+	height: 30vh;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	background-color: #37b1cc;
+	align-items: center;
+}
+
+}
+
+.division1 {
+	flex-grow: 0;
+	
+}
+
+.galeriaGrid {
+	padding: 200px 0px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr) ;
+	grid-gap: 10em;
+	border: solid 2px black;
+	background-color: tomato;
+	place-items: center;
+	
+	/*
+	grid-template-areas: 
+	"galeriaVid galeriaVid galeriaPic galeriaPic"
+	"galeriaVid galeriaVid galeriaPic galeriaPic"
+	"galeriaVid galeriaVid galeriaPic galeriaPic"
+	"galeriaVid galeriaVid galeriaPic galeriaPic" ; */
+
+}
+
+.galeriaPic {
+	border: solid 2px black;
+	padding: 1em;
+	background-color: rgb(28, 245, 209);
+	border-radius: 50%;
+}
+
+.galeriaVid {
+	width: 100%;
+}
+
+.containerFlex {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.containerFlex:hover {
+	transform: scale(2,2);
+}
+
+h3 {
+	font-family: stalinist one;
+	font-size: x-large;
+}
+
+@media (max-width: 600px) {
+	.galeriaGrid {
+		grid-template-columns: repeat(1,1fr);
+	}
+	.parrafoGris, .lead, .parrafoFuente2 {
+		text-align: left;
+		color: #fff;
+	}
+	#myCarousel {
+		height: 10px;
+	}
+}
+
+.h1Galeria {
+	background-image: linear-gradient(to right, red , purple);
+	text-align: center ;
+	animation-name: text_appear;
+	animation-duration: 2s;
+}
+
+@keyframes text_appear {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	list-style: none;
+	margin-bottom: 50px;
+}
+
+button {
+	width: 100px;
+	height: 50px;
+	margin-top: 50px;
+}
+
+.button1:hover {
+background-color: lawngreen;
+color: red;
+}
+.button2:hover {
+background-color: magenta;
+color: red;
+}
+.button3:hover {
+background-color: orangered;
+color: red;
+}
+.button4:hover {
+background-color: yellow;
+color: red;
+}
+
+.banner {
+	width: 100%;
+	background: url(https://media3.giphy.com/media/gNke2UrUTopOg/giphy.gif?cid=ecf05e478w36xnb73aaj8v4g12gg9np4zz57p073srxk7pa9&rid=giphy.gif);
+	background-size: cover;
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+	padding: 40px 15px;
+  }
+  
+  .big-text {
+	font-size: 130px;
+	font-weight: bolder;
+	animation-delay: 1s;
+  }
+  
+  .banner a {
+	display: inline-block;
+	background: #fff;
+	color: #333;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 40px;
+	padding: 15px;
+	transition: .3s;
+  }
+  
+  .banner a:hover {
+	background: #333;
+	color: #fff;
+  }
+
+  .myAnimation {
+     animation-duration: 1s;
+  }
+
+  .customBorder {
+	  border: solid 2px black;
+  }
+
+  .carousel-inner > .carousel-item > img {
+	width:640px;
+	height:640px;
+	
+  }
+
+.customAnchor {
+	top: 40%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.btn-group , .btn-block {
+	padding: 0;
+	margin: 0;
+	background-color: #37b1cc;
+}
+
+#containerFluid {
+	background-color: #37b1cc;
+}
+
