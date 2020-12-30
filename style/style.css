@@ -214,7 +214,7 @@ overflow: scroll;
 	align-items: center;
 }
 
-}
+
 
 .division1 {
 	flex-grow: 0;
@@ -387,3 +387,6 @@ color: red;
 	background-color: #37b1cc;
 }
 
+.navContainer i {
+	color: #bfd93f;
+}
