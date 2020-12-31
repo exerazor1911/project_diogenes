@@ -116,30 +116,6 @@ footer {
 	align-content: center;
 	display: inline-block;
 }
-
-
-
-/*
-.contactanos {
-	position: absolute;
-	top: -10px;
-	right: 200px;
-	display: inline-block;
-	color: cyan;
-	
-	background-color: blue;
-}
-
-.contactoBlogI {
-	align-content: center;
-	padding: 5px;
-	position: absolute;
-	display: inline-block;
-	top: 10px;
-	right: 10px;
-	background-color: green;
-} */
-
 h1 {
 	font-size: 100px;
 }
