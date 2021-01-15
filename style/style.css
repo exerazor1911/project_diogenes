@@ -241,8 +241,19 @@ h3 {
 	font-family: stalinist one;
 	font-size: x-large;
 }
+@media (max-width: 1600px) {
+	.galeriaGrid {
+		grid-template-columns: repeat(3,1fr);
+	}
+}
 
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
+	.galeriaGrid {
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+
+@media (max-width: 670px) {
 	.galeriaGrid {
 		grid-template-columns: repeat(1,1fr);
 	}
@@ -254,6 +265,17 @@ h3 {
 		height: 10px;
 	}
 }
+
+.carousel-item {
+	height: 800px;
+  }
+  
+  .carousel-item img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  min-height: 800px;
+  }
 
 .h1Galeria {
 	background-image: linear-gradient(to right, red , purple);
@@ -307,30 +329,26 @@ color: red;
 	color: #fff;
 	text-align: center;
 	padding: 40px 15px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+  }
+
+  .tienda {
+	color: #dbd2d2;
+	display: flex;
+	flex-wrap: wrap;
   }
   
   .big-text {
 	font-size: 130px;
 	font-weight: bolder;
 	animation-delay: 1s;
+	display: flex;
+	flex-wrap: wrap;
   }
   
-  .banner a {
-	display: inline-block;
-	background: #fff;
-	color: #333;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 40px;
-	padding: 15px;
-	transition: .3s;
-  }
-  
-  .banner a:hover {
-	background: #333;
-	color: #fff;
-  }
-
   .myAnimation {
      animation-duration: 1s;
   }
@@ -365,4 +383,16 @@ color: red;
 
 .navContainer i {
 	color: #bfd93f;
+}
+
+.zonaContent1, .zonaContent2 {
+	height: 80%;
+}
+
+.zonaContent1 i, .zonaContent2 i {
+	height: 50%;
+}
+
+.zonaContent1 p, .zonaContent2 p {
+	height: 50%;
 }
