@@ -7,18 +7,32 @@
 	/*width: 100vh;*/
 }
 
-.backgroundImage {
+body {
+	width: 100%;
+    height: 100%;
+    background: url("../img/sitebg.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+/* .backgroundImage {
+	position: relative;
+	width: 100%;
+    height: 100%;
+}
+
+.backgroundImage::before {
+	content: '';
 	background-image: url("https://png.pngtree.com/png-clipart/20190705/original/pngtree-clip-art-animal-illustration-dog-vector-illustration-illustration-of-png-image_4347788.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
-	position: fixed;
-	opacity: 0.1;
-	z-index: -1;
+	position: absolute;
+	opacity: 0.25;
 	background-size: cover;
-	width: 100%;
-    height: 100vh;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px; 
 }
-
+  */
 .tituloCeleste {
 	color :#bfd93f ;
 	font-weight: bolder;
@@ -96,21 +110,7 @@ tr {
 	   background-image: url("https://png.pngtree.com/png-clipart/20191120/original/pngtree-christmas-dog-santa-claus-animal-vector-png-image_5071530.jpg");
    }
 
-header { margin-bottom: 10px;
-
-}
-nav{ margin-bottom: 10px;
-
-}
-section { margin-bottom: 10px;
-
-}
-footer { 
-	margin-bottom:  10px; 
-}
-
 .division1 {
-	margin-left: 30vh;
 	align-content: center;
 	display: inline-block;
 }
@@ -120,17 +120,15 @@ h1 {
 
 .productosD {
 background-image: linear-gradient(to bottom ,red , tomato);
-margin-top: 10px;
 border: solid 5px black;
 opacity: 0.8;
 }
 
 .noticias {
 background-color: tomato;
-margin-top: 10px;
-border: solid 5px black;
+border: solid 1.5px black;
 opacity: 0.8;
-overflow: scroll;
+overflow: hidden;
 }
 
 .masInfo {
@@ -240,6 +238,10 @@ h3 {
 	font-size: x-large;
 }
 
+.carousel {
+	border: solid 10px black;
+}
+
 .carousel-item {
 	height: 800px;
   }
@@ -269,13 +271,13 @@ ul {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	list-style: none;
-	margin-bottom: 50px;
+	
 }
 
 button {
 	width: 100px;
 	height: 50px;
-	margin-top: 50px;
+	
 }
 
 .button1:hover {
@@ -379,6 +381,16 @@ color: red;
 	.galeriaGrid {
 		grid-template-columns: repeat(2,1fr);
 	}
+	.carousel-item {
+		height: 500px;
+	  }
+	  
+	  .carousel-item img {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  min-height: 500px;
+	  }
 }
 
 @media (max-width: 670px) {
@@ -389,13 +401,26 @@ color: red;
 		text-align: left;
 		color: #fff;
 	}
-	#myCarousel {
-		height: 10px;
+	.banner {
+		text-align: left;
+		font-size: 1.7em;
 	}
 	.banner .big-text {
-		font-size: 0.5em;
+		text-align: left;
+		font-size: 1.7em;
 	}
 	.banner .tienda {
-		font-size: 0.5em;
+		text-align: left;
+		font-size: 1.7em;
 	}
+	.carousel-item {
+		height: 300px;
+	  }
+	  
+	  .carousel-item img {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  min-height: 300px;
+	  }
 }
