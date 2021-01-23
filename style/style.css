@@ -197,7 +197,7 @@ overflow: hidden;
 .galeriaGrid {
 	padding: 200px 0px;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr) ;
 	grid-gap: 10em;
 	border: solid 2px black;
@@ -380,16 +380,7 @@ color: red;
  margin-bottom: 200px;
 }
 
-@media (max-width: 1600px) {
-	.galeriaGrid {
-		grid-template-columns: repeat(3,1fr);
-	}
-}
-
 @media (max-width: 1100px) {
-	.galeriaGrid {
-		grid-template-columns: repeat(2,1fr);
-	}
 	.carousel-item {
 		height: 500px;
 	  }
@@ -403,9 +394,6 @@ color: red;
 }
 
 @media (max-width: 670px) {
-	.galeriaGrid {
-		grid-template-columns: repeat(1,1fr);
-	}
 	.parrafoGris, .lead, .parrafoFuente2 {
 		text-align: left;
 		color: #fff;
@@ -543,3 +531,10 @@ color: red;
 	color: #fff;
 }
 
+@media (max-width: 1680px) {
+	.galeriaGrid {
+		grid-template-columns: repeat(2,1fr);
+	}
+@media (max-width: 1072px) {
+	.galeriaGrid {
+		grid-template-columns: repeat(1,1fr);
