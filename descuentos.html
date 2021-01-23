@@ -9,25 +9,25 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="icons/css/all.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
 	<div class="backgroundImage"></div>
-	<div class="container">
-		<h1 class="tituloCeleste">Descuentos</h1>
+	<nav class="navbar navbar-expand-md navbar-dark bg-danger m-o p-o justify-content-center">
+		<a class="navbar-brand fas fa-dog fa-5x"></a>
+		<span class="navbar-text h3">Descuentos</span>
+		<ul class="navbar-nav">
+			<li class="nav-item"><a href="alimentoParaPerros.html" class="nav-link">Alimento para Perros</a></li>
+			<li class="nav-item"><a href="alimentoParaGatos.html" class="nav-link">Alimento para Gatos</a></li>
+			<li class="nav-item"><a href="promociones.html" class="nav-link">Promociones</a></li>
+			<li class="nav-item"><a href="descuentos.html" class="nav-link">Descuentos</a></li>
+			<li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
+			<li class="nav-item"><a href="zonaDeEnvioGratis.html" class="nav-link">Zona de envios Gratis</a></li>
+		</ul>
+	</nav>
+	<div class="container d-flex justify-content-center">
 	</div> 
-	<div class="container mb-3 mt-5">
-		<div class="dropdown w-30">
-			<button type="button" class="btn btn-success dropdown-toggle w-30" data-toggle="dropdown">
-			  Tarjeta
-			</button>
-			<div class="dropdown-menu">
-			  <a class="dropdown-item" href="#">Visa</a>
-			  <a class="dropdown-item" href="#">MasterCard</a>
-			  <a class="dropdown-item" href="#">Maestro</a>
-			  <a class="dropdown-item" href="#">Cabal</a>
-			</div>
-		</div>	
-		</div>
+	<!-- la idea es que este dropdown en un futuro con javascript muestre tarjeta por tarjeta -->
 	<div class="container-fluid">
 		<div class="row d-flex justify-content-center">
 			<div class="divDescuento">
@@ -48,6 +48,19 @@
 			</div>
 		</div>
 	</div>	
+	<div class="container mb-3 mt-5 d-flex justify-content-start">
+		<div class="dropdown w-30">
+			<button type="button" class="btn btn-success dropdown-toggle w-30" data-toggle="dropdown">
+			  Tarjeta
+			</button>
+			<div class="dropdown-menu">
+			  <a class="dropdown-item" href="#">Visa</a>
+			  <a class="dropdown-item" href="#">MasterCard</a>
+			  <a class="dropdown-item" href="#">Maestro</a>
+			  <a class="dropdown-item" href="#">Cabal</a>
+			</div>
+		</div>	
+	</div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

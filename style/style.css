@@ -258,6 +258,7 @@ h3 {
 	text-align: center ;
 	animation-name: text_appear;
 	animation-duration: 2s;
+	border: solid 3px black;
 }
 
 @keyframes text_appear {
@@ -361,14 +362,17 @@ color: red;
 
 .zonaContent1, .zonaContent2 {
 	height: 80%;
+	color: rgb(204, 141, 24);
 }
 
 .zonaContent1 i, .zonaContent2 i {
 	height: 50%;
+	color: rgb(165, 115, 22);
 }
 
 .zonaContent1 p, .zonaContent2 p {
 	height: 50%;
+	color: rgb(94, 65, 13);
 }
 
 @media (max-width: 1600px) {
@@ -498,4 +502,8 @@ color: red;
 	flex-direction: column;
 	align-items: center;
 	margin: 3rem;
+}
+
+.myTable {
+	margin-top: 50px;
 }
