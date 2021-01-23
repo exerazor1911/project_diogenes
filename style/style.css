@@ -376,6 +376,10 @@ color: red;
 	color: rgb(94, 65, 13);
 }
 
+.zonaContent2 {
+ margin-bottom: 200px;
+}
+
 @media (max-width: 1600px) {
 	.galeriaGrid {
 		grid-template-columns: repeat(3,1fr);
